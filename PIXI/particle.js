@@ -1,5 +1,5 @@
-const FRICTION = 0.86;
-const MOVE_SPEED = 0.1;
+const FRICTION = 0.9;
+const MOVE_SPEED = 0.01;
 
 export class Particle {
     constructor(pos, texture) {
@@ -15,7 +15,7 @@ export class Particle {
         this.sprite.y = this.y;
         this.vx = 0;
         this.vy = 0;
-        this.radius = 10;
+        this.radius = 15;
     }
 
     draw() {

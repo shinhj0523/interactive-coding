@@ -12,7 +12,7 @@ export class Visual {
 		this.mouse = {
             x: 0,
 			y: 0,
-			radius: 70,
+			radius: 50,
 		};
         document.addEventListener('pointermove', this.onMove.bind(this), false);
 
@@ -21,7 +21,7 @@ export class Visual {
 		if (this.container) {
 			stage.removeChild(this.container);
         }
-		this.pos = this.text.setText("MAKE;", 2, stageWidth, stageHeight);
+		this.pos = this.text.setText("A;", 2, stageWidth, stageHeight);
 
 		this.container = new PIXI.ParticleContainer(this.pos.length, {
 			vertices: false,
